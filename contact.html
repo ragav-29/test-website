@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NEXORATEKH LLP</title>
+    <meta name="description" content="Contact NEXORATEKH LLP for your IT infrastructure, cloud consulting, and managed enterprise services.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Global Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nexoratekh Icon" class="logo-img">
+                NEXORA<span>TEKH</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container animate-on-scroll">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our engineering team for consultations, support, or specific enterprise solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="contact-container">
+                
+                <!-- Contact Info -->
+                <div class="contact-info animate-on-scroll">
+                    <h2>Reach Our Desk</h2>
+                    <p style="margin-bottom: 2.5rem; color: var(--text-muted);">
+                        Whether you are looking to migrate to the cloud, optimize your DevOps workflows, or need reliable 24/7 managed IT services, our team is ready to assist you.
+                    </p>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.2rem; font-size: 1.1rem;">Location</h3>
+                            <p style="margin-bottom: 0;">Business Hub, Technology Park<br>India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.2rem; font-size: 1.1rem;">Email Us</h3>
+                            <p style="margin-bottom: 0;"><a href="mailto:contact@nexoratekh.com">contact@nexoratekh.com</a></p>
+                            <p style="margin-bottom: 0;"><a href="mailto:support@nexoratekh.com">support@nexoratekh.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.2rem; font-size: 1.1rem;">Call Us</h3>
+                            <p style="margin-bottom: 0;">+91-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form animate-on-scroll" style="transition-delay: 0.2s;">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@company.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+91 99999 99999" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Message / Inquiry</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <!-- Google Maps Placeholder -->
+            <div class="map-container animate-on-scroll">
+                <i class="fa-solid fa-map-location-dot" style="font-size: 4rem; color: #ccc;"></i>
+                <div style="position: absolute; bottom: 20px; text-align: center; width: 100%;">
+                    <span style="background: rgba(255,255,255,0.9); padding: 5px 15px; border-radius: 4px; font-weight: bold; color: var(--primary-color); box-shadow: 0 2px 5px rgba(0,0,0,0.1);">Interactive Google Maps Integration Here</span>
+                </div>
+                <!-- 
+                Actual iframe implementation would go here:
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color:var(--text-light); margin-bottom:1rem; display:inline-block;">
+                        <img src="images/logo.png" alt="Nexoratekh Icon" class="logo-img" style="vertical-align: middle; margin-right: 5px;"> NEXORA<span style="color:var(--accent-color);">TEKH</span>
+                    </a>
+                    <p>Powering Businesses with Cloud, DevOps and Infrastructure Excellence. We build scalable and secure digital ecosystems.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Core Solutions</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cloud Computing</a></li>
+                        <li><a href="services.html">DevOps Automation</a></li>
+                        <li><a href="services.html">Network Infrastructure</a></li>
+                        <li><a href="services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot"></i> India</li>
+                        <li><i class="fa-solid fa-envelope"></i> contact@nexoratekh.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEXORATEKH LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

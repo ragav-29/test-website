@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | NEXORATEKH LLP</title>
+    <meta name="description" content="Explore NEXORATEKH LLP professional IT services including Cloud Services, DevOps, Data Center operations, and Technical Support.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .all-services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Global Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nexoratekh Icon" class="logo-img">
+                NEXORA<span>TEKH</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container animate-on-scroll">
+            <h1>Our Enterprise Services</h1>
+            <p>Comprehensive IT Infrastructure, Cloud, and Engineering Solutions</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="all-services-grid">
+                
+                <!-- Managed IT Services -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?q=80&w=600&auto=format&fit=crop" alt="Managed IT Services" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Managed IT Services</h3>
+                    <ul>
+                        <li>24/7 infrastructure monitoring</li>
+                        <li>server and network management</li>
+                        <li>incident management</li>
+                        <li>SLA based support</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Services -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Cloud Services" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Cloud Services</h3>
+                    <ul>
+                        <li>AWS cloud architecture</li>
+                        <li>Microsoft Azure cloud solutions</li>
+                        <li>Google Cloud infrastructure</li>
+                        <li>hybrid and multi cloud deployment</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Management System -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600&auto=format&fit=crop" alt="Cloud Management System" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Cloud Management System</h3>
+                    <ul>
+                        <li>centralized cloud monitoring</li>
+                        <li>cloud governance</li>
+                        <li>automated provisioning</li>
+                        <li>cloud cost optimization</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps Services -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&auto=format&fit=crop" alt="DevOps Services" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-code-branch"></i></div>
+                    <h3>DevOps Services</h3>
+                    <ul>
+                        <li>CI/CD pipeline implementation</li>
+                        <li>containerization using Docker</li>
+                        <li>Kubernetes orchestration</li>
+                        <li>Infrastructure as Code (Terraform, Bicep)</li>
+                    </ul>
+                </div>
+
+                <!-- Data Center Services -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600&auto=format&fit=crop" alt="Data Center Services" class="service-card-img"> <!-- Placeholder - reuse appropriate server image -->
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-building-shield"></i></div>
+                    <h3>Data Center Services</h3>
+                    <ul>
+                        <li>enterprise server hosting</li>
+                        <li>colocation services</li>
+                        <li>disaster recovery solutions</li>
+                        <li>high availability infrastructure</li>
+                    </ul>
+                </div>
+
+                <!-- Network Infrastructure -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop" alt="Network Infrastructure" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Network Infrastructure</h3>
+                    <ul>
+                        <li>enterprise network architecture</li>
+                        <li>routing and switching</li>
+                        <li>firewall implementation</li>
+                        <li>VPN and secure connectivity</li>
+                    </ul>
+                </div>
+
+                <!-- NOC Solutions -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="NOC Solutions" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>NOC Solutions</h3>
+                    <ul>
+                        <li>24/7 network operations center monitoring</li>
+                        <li>infrastructure monitoring</li>
+                        <li>incident alerting</li>
+                        <li>system performance management</li>
+                    </ul>
+                </div>
+
+                <!-- Data Migration -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" alt="Data Migration" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-database"></i></div>
+                    <h3>Data Migration</h3>
+                    <ul>
+                        <li>on-premise to cloud migration</li>
+                        <li>database migration</li>
+                        <li>application migration</li>
+                        <li>legacy system modernization</li>
+                    </ul>
+                </div>
+
+                <!-- System Integration -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600&auto=format&fit=crop" alt="System Integration" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3>System Integration</h3>
+                    <p>Our consulting and system integration services help synchronize all your systems and processes so they work seamlessly together, enabling productivity and efficiency across your digital ecosystem.</p>
+                </div>
+
+                <!-- Hosting Services -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop" alt="Hosting Services" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-server"></i></div>
+                    <h3>Hosting Services</h3>
+                    <p>Powerful bare metal servers and next generation virtual cloud servers designed for high performance workloads and enterprise hosting needs.</p>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="service-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" alt="Technical Support" class="service-card-img">
+                    <div class="service-icon" style="margin-top: -40px; position: relative; z-index: 2; background-color: var(--bg-white); border: 4px solid var(--bg-white);"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Technical Support</h3>
+                    <p>Our technical support services create a virtual help desk to manage customer concerns and queries through multiple channels including voice, email and chat on a 24/7 basis.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color:var(--text-light); margin-bottom:1rem; display:inline-block;">
+                        <img src="images/logo.png" alt="Nexoratekh Icon" class="logo-img" style="vertical-align: middle; margin-right: 5px;"> NEXORA<span style="color:var(--accent-color);">TEKH</span>
+                    </a>
+                    <p>Powering Businesses with Cloud, DevOps and Infrastructure Excellence. We build scalable and secure digital ecosystems.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Core Solutions</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cloud Computing</a></li>
+                        <li><a href="services.html">DevOps Automation</a></li>
+                        <li><a href="services.html">Network Infrastructure</a></li>
+                        <li><a href="services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot"></i> India</li>
+                        <li><i class="fa-solid fa-envelope"></i> contact@nexoratekh.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEXORATEKH LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
