@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Handle Contact Form Submission (Prevent Default for static site)
+    // Handle Contact Form Submission
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -105,21 +105,34 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
             
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Preparing Email...';
             btn.disabled = true;
             
-            // Simulate API call
+            // Collect form data
+            const name = document.getElementById('name').value || '';
+            const email = document.getElementById('email').value || '';
+            const phone = document.getElementById('phone').value || '';
+            const message = document.getElementById('message').value || '';
+            
+            // Construct mailto link
+            const subject = encodeURIComponent(`New Inquiry from ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+            const mailtoLink = `mailto:Info.nexoratekh@gmail.com?subject=${subject}&body=${body}`;
+            
             setTimeout(() => {
-                btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent Successfully!';
+                btn.innerHTML = '<i class="fa-solid fa-envelope"></i> Opening Email Client...';
                 btn.style.backgroundColor = '#28a745'; // Success green
-                contactForm.reset();
+                
+                // Redirect to email client
+                window.location.href = mailtoLink;
                 
                 setTimeout(() => {
                     btn.textContent = originalText;
                     btn.disabled = false;
                     btn.style.backgroundColor = ''; // Reset to default CSS
+                    contactForm.reset();
                 }, 3000);
-            }, 1500);
+            }, 800);
         });
     }
 });
