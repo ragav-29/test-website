@@ -109,10 +109,28 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.disabled = true;
             
             // Collect form data
-            const name = document.getElementById('name').value || '';
-            const email = document.getElementById('email').value || '';
-            const phone = document.getElementById('phone').value || '';
-            const message = document.getElementById('message').value || '';
+            const name = document.getElementById('name').value.trim() || '';
+            const email = document.getElementById('email').value.trim() || '';
+            const phone = document.getElementById('phone').value.trim() || '';
+            const message = document.getElementById('message').value.trim() || '';
+            
+            // Validation
+            const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+            const phoneRegex = /^\\+?[\\d\\s\\-]{10,}$/;
+
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                btn.textContent = originalText;
+                btn.disabled = false;
+                return;
+            }
+
+            if (!phoneRegex.test(phone)) {
+                alert("Please enter a valid phone number (at least 10 digits).");
+                btn.textContent = originalText;
+                btn.disabled = false;
+                return;
+            }
             
             // Construct mailto link
             const subject = encodeURIComponent(`New Inquiry from ${name}`);

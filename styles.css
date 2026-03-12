@@ -518,7 +518,6 @@ footer {
   background-color: transparent; /* Remove background on footer */
   box-shadow: none; /* Remove shadow on footer */
   padding: 0;
-  filter: brightness(0) invert(1);
 }
 
 .footer-col p {
@@ -923,4 +922,24 @@ textarea.form-control {
 }
 .text-accent {
   color: var(--accent-color);
+}
+
+/* Mobile Fixes for Vision & Mission */
+@media screen and (max-width: 768px) {
+  .vm-card {
+    padding: 2rem 1.5rem;
+    text-align: left;
+  }
+  .vm-card h2 {
+    font-size: 1.6rem;
+    align-items: flex-start; /* Fix alignment if text wraps */
+    gap: 12px;
+  }
+  .vm-icon {
+    font-size: 1.8rem;
+    margin-top: 4px; /* Align icon slightly with the first line of text */
+  }
+  .styled-list li {
+    font-size: 1rem;
+  }
 }
